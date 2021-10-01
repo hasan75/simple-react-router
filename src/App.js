@@ -33,10 +33,10 @@ function App() {
 
             </FriendDetail>
           </Route>
-          <Route path='/about'>
+          <Route exact path='/about'>
             <About></About>
           </Route>
-          <Route path='/about/culture'>
+          <Route exact path='/about/culture'>
             <Culture></Culture>
           </Route>
           <Route path='*'>
