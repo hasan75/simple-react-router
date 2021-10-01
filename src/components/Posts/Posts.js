@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Posts.css'
 import Post from '../Post/Post';
 
 const Posts = () => {
@@ -13,13 +14,14 @@ const Posts = () => {
     return (
         <div>
             <h3>Today's Posts are {posts.length}</h3>
-            {
+            <div className="post-container">
+                {
                 posts.map(post => <Post
                 key ={post.id}
                 post={post}
                 ></Post>)
             }
-            
+            </div>
         </div>
     );
 };
